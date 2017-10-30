@@ -1,0 +1,279 @@
+/*
+Centralised CSS file for testchan. 
+Acts as the default stylings across the entire
+site, but boards could implement their own custom 
+CSS files to override this default CSS file.
+*/
+
+/* Common Page Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.content {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    
+    background: linear-gradient(#EEEEEE, #FFFFFF);
+}
+.navigation {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+
+    background-color: #CCCCCC;
+}
+.container {
+    margin: 0 10%;
+    padding: 50px 0 114px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+
+    background-color: #CCCCCC;
+}
+
+/* Site index */
+.index-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+
+    background: linear-gradient(#EEEEEE, #FFFFFF);
+}
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100%;
+    margin: auto 10%;
+}
+.index-footer {
+    height: 100px;
+    width: 100%;
+    margin: 14px 0 0;
+
+    background-color: #CCCCCC;
+}
+.logo {
+    display: block;
+    width: 50%;
+    min-width: 200px;
+    margin: 14px auto 0;
+    
+    background-color: #CCCCCC;
+    height: 250px;
+}
+.boards {
+    min-width: 120px;
+    max-width: 75%;
+    margin: 14px auto 0;
+
+    border: 2px solid #BBBBBB;
+}
+.boards-content {
+    display: flex;
+    justify-content: space-around;
+}
+.boards-header {
+    background-color: #BBBBBB;
+}
+.boards-column {
+    display: inline-block;
+    margin: 4px;
+}
+.boards-category {
+    font-weight: bold;
+}
+.boards-list {
+    list-style-type: none;
+}
+/* All the possible states of the board links */
+.boards-link {
+    text-decoration: none;
+}
+.boards-link:link {
+}
+.boards-link:visited {
+}
+.boards-link:hover {
+    text-decoration: underline;
+}
+.boards-link:active {
+}
+
+/* Add */
+.banner {
+    display: block;
+    width: 50%;
+    margin: 14px 25% 0;
+    
+    background-color: #CCCCCC;
+    height: 100px;
+}
+.form {
+    min-width: 200px;
+    max-width: 380px;
+    margin: 14px auto 0;
+
+    border: 2px solid #BBBBBB;
+}
+.form-header {
+    margin: 0 0 14px;
+
+    background-color: #BBBBBB;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    min-width: 172px;
+    width: calc(100% - 28px);
+    max-width: 352px;
+    margin: 0 14px;
+}
+.form-label {
+    display: block;
+    min-width: 70px;
+}
+.board-form-label {
+    display: block;
+    min-width: 84px;
+}
+.form-input {
+    min-width: 102px;
+    width: 100%;
+    max-width: 282px;
+}
+.form-input[id="content"] {
+    resize: vertical;
+}
+.form-input[type="checkbox"] {
+    margin: auto;
+    margin-left: 2px;
+    min-width: 13px;
+    width: 13px;
+    height: 13px;
+}
+.form-input[type="submit"] {
+    min-width: 100px;
+    width: 100px;
+    max-width: 100px;
+    margin: 14px calc(50% - 50px);
+}
+
+/* View */
+/* Thread */
+.thread {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px;
+
+	background-color: #EEEEEE;
+}
+.thread-head {
+}
+.thread-id {
+}
+.thread-name {
+	color: darkgreen;
+	font-weight: bold;
+}
+.thread-email {
+	color: navy;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.thread-email:link {
+}
+.thread-email:visited {
+}
+.thread-email:hover {
+}
+.thread-email:active {
+}
+.thread-hash {
+	color: green;
+	font-style: italic;
+}
+.thread-subject {
+	color: darkred;
+	font-weight: bold;
+}
+.thread-time {
+}
+.thread-body {
+	margin: 8px 0 0;
+	overflow: auto;
+}
+.thread-image {
+	display: inline-block;
+	float: left;
+	margin-right: 8px;
+}
+.thread-content {
+	display: inline-block;
+}
+/* Post */
+.post {
+	max-width: 100%;
+	margin-top: 4px;
+	padding: 10px;
+	overflow-x: hidden;
+	background-color: #DDDDDD;
+}
+.post:first-child {
+	margin-top: 10px;
+}
+.post-head {
+}
+.post-id {
+}
+.post-name {
+	color: darkgreen;
+	font-weight: bold;
+}
+.post-email {
+	color: navy;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.post-email:link {
+}
+.post-email:visited {
+}
+.post-email:hover {
+}
+.post-email:active {
+}
+.post-hash {
+	color: green;
+	font-style: italic;
+}
+.post-subject {
+	color: darkred;
+	font-weight: bold;
+}
+.post-time {
+}
+.post-body {
+	margin: 8px 0 0;
+}
+.post-image {
+	display: inline-block;
+	float: left;
+	margin-right: 8px;
+}
+.post-content {
+	display: inline-block;
+}

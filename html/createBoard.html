@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create Board</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/testchan.css">
+  </head>
+  <body>
+    <div class="content">
+      <div class="navigation">Navigation Bar</div>
+      <div class="container">
+	<form class="form" name="board-form" method="POST" 
+	target="_self" action="/testchan/php/boardAdd.php">
+		<div class="form-header">Create a new board</div>		
+		<div class="form-group">
+			<label class="board-form-label" for="password">
+				Password
+			</label>
+			<input id="password" class="form-input" 
+			name="password" type="password">
+		</div>	
+		<div class="form-group">
+			<label class="board-form-label" for="owner">
+				Owner
+			</label>
+			<input id="owner" class="form-input" 
+			name="owner" type="text">
+		</div>	
+		<div class="form-group">
+			<label class="board-form-label" for="link">
+				Link
+			</label>
+			<input id="link" class="form-input" name="link" 
+			type="text">
+		</div>				
+		<div class="form-group">
+			<label class="board-form-label" for="name">
+				Name
+			</label>
+			<input id="name" class="form-input" name="name" 
+			type="text">
+		</div>	
+		<div class="form-group">
+			<label class="board-form-label" for="cat">
+				Category
+			</label>
+			<input id="cat" class="form-input" 
+			name="category" type="text">
+		</div>
+		<div class="form-group">
+			<label class="board-form-label" for="default">
+				Default
+			</label>
+			<input id="default" class="form-input" 
+			name="default" type="checkbox">
+		</div>
+		<div class="form-group">
+			<label class="board-form-label" for="sfw">
+				Worksafe
+			</label>
+			<input id="sfw" class="form-input" name="sfw" 
+			type="checkbox">
+		</div>
+		<input class="form-input" name="submit" type="submit" 
+		value="Create Board">
+	</form>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
